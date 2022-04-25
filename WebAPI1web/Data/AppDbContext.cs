@@ -11,5 +11,6 @@ namespace WebAPI1web.Data
         }
         public DbSet<Inspection> Inspections { get; set; }
         public DbSet<InspectionType> InspectionTypes { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

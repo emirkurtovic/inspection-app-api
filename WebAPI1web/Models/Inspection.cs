@@ -18,6 +18,7 @@ namespace WebAPI1web.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [RegularExpression("^(SAT|UNSAT)$")]
         public string Status { get; set; }
         [Required]
         [StringLength(200)]
@@ -26,5 +27,9 @@ namespace WebAPI1web.Models
         //veza sa InspectionType
         public int InspectionTypeId { get; set; }
         public InspectionType? InspectionType { get; set; }
+
+        //veza sa User
+        public int UserId { get; set; }
+        public User? User { get; set; }
     }
 }
